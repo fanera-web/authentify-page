@@ -1,27 +1,24 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Password Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Система автентифікації</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="theme.css">
 </head>
-<body class="light">
-  <main>
-    <h1>Password Generator</h1>
-    <label for="strength">Choose strength:</label>
-    <select id="strength">
-        <option value="simple">Simple (8)</option>
-        <option value="medium">Medium (12)</option>
-        <option value="hard">Hard (16)</option>
-    </select>
-    <div id="btnContainer">
-      <button id="generateBtn">Generate</button>
-      <button id="themeBtn">Dark</button>
-    </div>
-    <p id="password">Your password:</p>
-  </main>
-  <script src="generate.js"></script>
+<body>
+  <div class="container">
+    <h1>Вхід у систему</h1>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Ім'я користувача" required>
+      <input type="password" id="password" placeholder="Пароль" required>
+      <div class="form-actions">
+        <button type="submit" id="loginBtn">Увійти</button>
+        <button type="button" id="registerBtn">Зареєструватися</button>
+      </div>
+    </form>
+    <button id="themeToggle">Змінити тему</button>
+  </div>
+  <script src="sys.js"></script>
 </body>
 </html>
