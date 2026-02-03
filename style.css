@@ -31,6 +31,7 @@ body.dark {
   background: rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
+  padding-inline: 20px;
 }
 
 #loginForm {
@@ -69,4 +70,5 @@ button:hover {
   .container {
     width: 100%;
   }
+
 }
